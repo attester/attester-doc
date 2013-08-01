@@ -1,0 +1,23 @@
+{
+  "name": "attester-doc",
+  "version": "1.0.0",
+  "author": "ariatemplates <contact@ariatemplates.com> (http://github.com/ariatemplates)",
+  "description": "Repository for attester documentation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attester/attester-doc"
+  },
+  "devDependencies": {
+    "express": "3.3.x",
+    "jade": "0.33.x",
+    "marked": "git+https://github.com/piuccio/marked.git#listeners",
+    "pygmentize-bundled": "1.0.x",
+    "q": "~0.9.6",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-sass": "~0.4.1",
+    "attester": "x"
+  },
+  "license": "Apache 2.0"
+}

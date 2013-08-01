@@ -1,0 +1,23 @@
+$dark_grey: #ccc;
+$light_grey: #f3f3f3;
+$dark_black: #3e4145;
+$clear_white: #fff;
+
+$dark_color_on_light: #1F170E;
+$light_color_on_light: #8c8c8c;
+$action_idle_on_light: #08c;
+$action_active_on_light: #ed9d13;
+$draw_attention_on_light: #d14;
+
+$dark_color_on_dark: #8c9198;
+$light_color_on_dark: #fff;
+$action_idle_on_dark: #fff;
+$action_active_on_dark: #f7941d;
+$draw_attention_on_dark: #d14;
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}

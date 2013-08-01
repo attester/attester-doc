@@ -1,0 +1,36 @@
+#container {
+    position: relative;  /* This fixes the IE7 overflow hidden bug */
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    /* This chops off any overhanging divs */
+    .columns {
+        right: 75%;
+        background: $dark_black;
+    }
+    .main {
+        width: 71%;    /* right column content width */
+        left: 102%;    /* 100% plus left column left padding */
+        min-height: 500px;
+    }
+    .side {
+        width: 21%;    /* left column content width (column width minus left and right padding) */
+        left: 6%;      /* (right column left and right padding) plus (left column left padding) */
+        left: 3%;
+        position: fixed;
+    }
+}
+
+.columns {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.main,
+.side {
+    float: left;
+    position: relative;
+    padding: 0 0 1em 0;
+    overflow: hidden;
+}

@@ -1,0 +1,112 @@
+@import "settings";
+@import "global";
+@import "column_layout";
+@import "fonts";
+@import "pygments";
+
+body {
+    @include readable_text();
+    color: $dark_color_on_light;
+    height: 100%;
+    background-color: $light_grey;
+}
+
+
+aside.navigation {
+    display: block;
+    @import "aside";
+}
+
+.main.index {
+    @import "main";
+}
+
+a, label, nav {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+em {
+    color: $light_color_on_light;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+code {
+    padding: 2px 4px;
+    color: $draw_attention_on_light;
+    background-color: $light_grey;
+    border: 1px solid $dark_grey;
+    white-space: nowrap;
+    font-size: 13px;
+    font-family: Monaco,Consolas,"Lucida Console",monospace;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre code {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    color: $action_idle_on_light;
+    letter-spacing: 2px;
+    word-spacing: 0.2em;
+    // I believe borders are more readable than underline
+    text-decoration: none;
+    border-bottom: 1px solid $action_idle_on_light;
+}
+a:hover {
+    color: $action_active_on_light;
+    border-bottom: 1px solid $action_active_on_light;
+}
+
+aside.note {
+    float: right;
+    clear: right;
+    color: $light_color_on_light;
+    width: 250px;
+    font-size: 13px;
+    line-height: 18px;
+    border-left: 4px solid #99CC00;
+    padding: 0 0 0 10px;
+    margin: 0 0 1em 20px;
+}
+
+nav.toc {
+    background: #fff;
+    border-bottom: 2px solid $dark_grey;
+    border-top: 3px solid $dark_black;
+    border-left: 1px solid $dark_grey;
+    border-right: 1px solid $dark_grey;
+    float: right;
+    margin: -1px 0 19px 20px;
+    padding: 10px 20px;
+    position: relative;
+    width: 250px;
+
+    h1 {
+        font-size: 16px;
+        margin: 0;
+        a {
+            color: $dark_color_on_light;
+            text-decoration: none;
+            border: 0;
+        }
+    }
+    h2 {
+        font-size: 14px;
+        margin: 0.3em 0.5em;
+        display: list-item;
+        list-style: square;
+    }
+    h3 {
+        font-size: 12px;
+        margin: 0.3em 1.5em;
+        display: list-item;
+        list-style: circle;
+    }
+}

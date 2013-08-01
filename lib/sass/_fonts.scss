@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MuliRegular';
+    src: url('/font/Muli-Regular-webfont.eot');
+    src: url('/font/Muli-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/Muli-Regular-webfont.woff') format('woff'),
+         url('/font/Muli-Regular-webfont.ttf') format('truetype'),
+         url('/font/Muli-Regular-webfont.svg#MuliRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuliItalic';
+    src: url('/font/Muli-Italic-webfont.eot');
+    src: url('/font/Muli-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/Muli-Italic-webfont.woff') format('woff'),
+         url('/font/Muli-Italic-webfont.ttf') format('truetype'),
+         url('/font/Muli-Italic-webfont.svg#MuliItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin readable_text() {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+@mixin title_text() {
+    text-rendering: optimizeLegibility;
+    font-family: "MuliRegular";
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 2px;
+    .initials {
+        text-transform: lowercase;
+        font-size: 30px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        margin-right: 6px;
+    }
+}
