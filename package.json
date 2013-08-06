@@ -9,15 +9,14 @@
   },
   "devDependencies": {
     "express": "3.3.x",
-    "jade": "0.33.x",
+    "jade": "0.34.x",
     "marked": "git+https://github.com/piuccio/marked.git#listeners",
-    "pygmentize-bundled": "1.0.x",
+    "pygmentize-bundled": "1.2.x",
     "q": "~0.9.6",
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.1",
     "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-sass": "~0.4.1",
-    "attester": "x"
+    "grunt-contrib-sass": "~0.4.1"
   },
   "license": "Apache 2.0"
 }
