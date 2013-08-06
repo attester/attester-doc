@@ -133,6 +133,8 @@ For a list of all available options and their meaning, refer to:
 
 ## Browsers
 
+<aside class="note">attester won't start automatically any browser, but simply wait for them to connect. For automatic ways to launch browsers please refer to the [browser article](/usage/browsers.html)</aside>
+
 This section is optional and describes the list of browsers that are expected to connect as slave.
 
 If the browsers section is not present, attester will not make any difference between browsers and run each test only once, in whatever browser is connected.
