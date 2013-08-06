@@ -238,3 +238,11 @@ The properties are
 * `json-file` JSON file with detailed information on each test run
 * `xml-file` JUnit-style XML file with the result of the test campaign
 * `xml-folder` Path of the folder in which attester generates a file for each test, this is the format accepted by [Sonar](/usage/ci/sonar.html).
+
+
+
+## Templating
+
+The configuration files allows to use a simple templating engine to refer to other options specified in the configuration file or in the [environment variables](/usage/command_line.html#environment_variables).
+
+This syntax is `<%= prop.subprop %>`, for more information refer to the section on [environment variables](/usage/command_line.html#environment_variables).
