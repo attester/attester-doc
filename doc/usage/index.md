@@ -14,7 +14,7 @@ To start testing your code you'll have to install attester in your project
 npm install attester --save-dev
 ````
 
-<aside class="note">For help you can follow this guide to [install PanthomJS](/phantom) on your machine</aside>
+<aside class="note">For help you can follow this guide to [install PhanthomJS](/usage/phantom.html) on your machine</aside>
 
 This will also modify your `package.json` to include attester as a [devDependency](https://npmjs.org/doc/json.html#devDependencies).
 
