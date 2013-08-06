@@ -25,6 +25,15 @@ module.exports = function(grunt) {
                     ext: ".css"
                 }]
             }
+        },
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: "public/css/",
+                src: ["*.css"],
+                dest: "public/css/",
+                ext: ".css"
+            }
         }
     });
 
@@ -33,7 +42,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-connect");
     grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask("default", ["generate", "sass"]);
+    grunt.registerTask("default", ["generate", "sass", "cssmin"]);
     grunt.registerTask("dev", ["default", "connect", "watch"]);
 };
