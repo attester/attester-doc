@@ -218,8 +218,8 @@ coverage-reports:
 
 Code coverage is obtained through [node-coverage](https://github.com/piuccio/node-coverage/) and the report can be written in
 
-* JSON, the internal format of `node-coverage`
-* LCOV, the format accepted by [Sonar](/usage/ci/sonar.html)
+* `JSON`, the internal format of `node-coverage`
+* `LCOV`, the format accepted by [Sonar](/usage/ci/sonar.html)
 
 ### Test Reports
 

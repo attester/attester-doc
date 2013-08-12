@@ -23,6 +23,22 @@ body
 							a(href="#" + heading.link)= heading.title
 			| !{content}
 
+	mixin article_api(title, content, methods, events)
+		if methods.length > 0 || events.length > 0
+			.api.navigation
+				if methods.length > 0
+					nav.methods
+						h1 Methods
+						each method in methods
+							h2= method
+				if events.length > 0
+					nav.events
+						h1 Events
+						each event in events
+							h2= event
+		article.api
+			!{content}
+
 	mixin side_index
 		p.big Latest Version
 		p= attester.version
@@ -50,6 +66,8 @@ body
 					mixin home(article.content)
 				else if documentation
 					mixin article_element(article.title, article.content, article.toc)
+				else if api
+					mixin article_api(article.title, article.content, article.methods, article.events)
 				else
 					p Invalid article type, it should be either index or documentation
 
@@ -69,12 +87,9 @@ body
 							li(class=documentation ? "active" : "")
 								a(href="/usage/index.html")
 									i.icon-file-text.font-icon
-									| Documentation
-							li
+									| Usage
+							li(class=api ? "active" : "")
 								a(href="/api/index.html")
 									i.icon-code.font-icon
 									| API
-					if index
-						mixin side_index
-					else if documentation
-						mixin side_index
+					mixin side_index
