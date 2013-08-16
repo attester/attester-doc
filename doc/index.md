@@ -14,7 +14,7 @@ When it comes to testing JavaScript there is a large set of testing frameworks. 
 		<article class="explaination">
 			<p>Supports the following unit testing frameworks.</p>
 			<ul>
-				<li>[Mocha](http://visionmedia.github.com/mocha/) with [Chai](http://chaijs.com/), [Expect.js](https://github.com/LearnBoost/expect.js/) or any other assertion library.</li>
+				<li>[Mocha](http://visionmedia.github.io/mocha/) with [Chai](http://chaijs.com/), [Expect.js](https://github.com/LearnBoost/expect.js/) or any other assertion library.</li>
 				<li>[Aria Templates JSUnit](https://github.com/ariatemplates/ariatemplates).</li>
 			</ul>
 			<p>Adding support for other test frameworks is as simple as adding an [adapter](/api/framework_apadter.html) for that test framework.</p>
@@ -31,7 +31,7 @@ When it comes to testing JavaScript there is a large set of testing frameworks. 
 			<p>Code coverage (aggregating all browsers) output formats:</p>
 			<ul>
 				<li>[node-coverage](https://github.com/piuccio/node-coverage) JSON file</li>
-				<li>[lcov](http://ltp.sourceforge.net/coverage/lcov/geninfo.1.php) file, accepted by [Sonar](http://www.sonarsource.org/) <em>(currently only for line coverage)</em></li>
+				<li>[lcov](http://ltp.sourceforge.net/coverage/lcov/geninfo.1.php) file, accepted by [Sonar](http://www.sonarqube.org/) <em>(currently only for line coverage)</em></li>
 			</ul>
 		</article>
 	</section>
@@ -90,7 +90,7 @@ ____________________
 Compared to other tools like [Karma](http://karma-runner.github.io/) and [Testem](https://github.com/airportyh/testem) attester adds the following
 
 * Every test runs in isolation instead of adding all tests in the same page. This makes sure that a test doesn't have side effects on other tests.
-* Better parallel testing. Since every test is a single `test task`, tests can be dispatched to multiple browsers in parallel. Try running your test suite with [4 instances of PhantomJS](/usage/phantom.html#number_of_instances) to enjoy testing.
+* Better parallel testing. Since every test is a single `test task`, tests can be dispatched to multiple browsers in parallel. Try running your test suite with [4 instances of PhantomJS](/usage/command_line.html#usual_options) to enjoy testing.
 
 
 ## How does it look like?

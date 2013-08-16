@@ -29,7 +29,7 @@ attester has a command line utility that can be used in your build to execute yo
 
 <aside class="note">
 	<p>A simple configuration file is available [below](#configuration_file).</p>
-	<p>It is also possible to use a [separate script](/package_json) for attester instead of `test`, this gives you the flexibility to run more scripts from `npm test`.</p>
+	<p>It is also possible to use a [separate script](/usage/package_json.html) for attester instead of `test`, this gives you the flexibility to run more scripts from `npm test`.</p>
 </aside>
 
 Attester requires a configuration file that describes the list of tests and the available resources (source code to be tested).

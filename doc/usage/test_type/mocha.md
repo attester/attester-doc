@@ -1,6 +1,6 @@
 # Mocha configuration
 
-[Mocha](http://visionmedia.github.io/mocha) is a feature-rich JavaScript test framework running on node and the browser with an amazing support for asynchronous testing.
+[Mocha](http://visionmedia.github.io/mocha/) is a feature-rich JavaScript test framework running on node and the browser with an amazing support for asynchronous testing.
 
 Examples of different attester configuration are available at this [repository](https://github.com/attester/example-mocha).
 
