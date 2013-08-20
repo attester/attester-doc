@@ -10,12 +10,16 @@
             - [package.json](/usage/package_json.html) Configure you `package.json` to use attester
         - [Browsers](/usage/browsers.html) Automatically start browsers for testing
             - [PhantomJS](/usage/phantom.html) Configuration options for PhantomJS
+        - [Write Plugins](/usage/write_plugins.html) How to write a plugin for attester
     - [API](/api/index.html) Reference guide for plugin developers
-        - [Campaign](/api/campaign.html) Create and manage test campaigns.
+        - [Campaign](/api/campaign.html) Create and manage test campaigns
         - [Config](/api/config.html) Handle global configuration
         - [Core](/api/core.html) Main module, coordinates all the others
         - [Event](/api/event.html) Event communication bus
         - [Launcher](/api/launcher.html) Launch and drive browsers
         - [Logger](/api/logger.html) Provide a logging interface
+        - [Middlewares](/api/middlewares.html) Generic middlewares
+        - [Plugins](/api/plugins.html) Extend and customize attester behavior
         - [Reports](/api/reports.html) Write test reports
         - [Server](/api/server.html) Start and control the test server
+        - [TestPage](/api/testPage.html) Define what's loaded in browsers
