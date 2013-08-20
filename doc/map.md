@@ -1,0 +1,21 @@
+# Site Map
+
+- [Home](/index.html) Landing page, why attester?
+    - [Usage](/usage/index.html) Introductory article on the generic usage of attester
+        - [Configuration](/usage/configuration.html) How to configure a campaign
+            - [Aria Templates](/usage/test_type/aria_templates.html) Configure Aria Templates tests
+            - [Mocha](/usage/test_type/mocha.html) Configure Mocha tests
+        - [Command line](/usage/command_line.html) Run attester from the command line
+        - [Module](/usage/module.html) Use attester as a module
+            - [package.json](/usage/package_json.html) Configure you `package.json` to use attester
+        - [Browsers](/usage/browsers.html) Automatically start browsers for testing
+            - [PhantomJS](/usage/phantom.html) Configuration options for PhantomJS
+    - [API](/api/index.html) Reference guide for plugin developers
+        - [Campaign](/api/campaign.html) Create and manage test campaigns.
+        - [Config](/api/config.html) Handle global configuration
+        - [Core](/api/core.html) Main module, coordinates all the others
+        - [Event](/api/event.html) Event communication bus
+        - [Launcher](/api/launcher.html) Launch and drive browsers
+        - [Logger](/api/logger.html) Provide a logging interface
+        - [Reports](/api/reports.html) Write test reports
+        - [Server](/api/server.html) Start and control the test server
