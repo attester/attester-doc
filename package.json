@@ -8,7 +8,7 @@
     "url": "https://github.com/attester/attester-doc"
   },
   "devDependencies": {
-    "express": "3.3.x",
+    "express": "4.17.x",
     "jade": "0.34.x",
     "marked": "git+https://github.com/piuccio/marked.git#listeners",
     "pygmentize-bundled": "1.2.x",
